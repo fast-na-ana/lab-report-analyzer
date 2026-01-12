@@ -1,0 +1,1652 @@
+{
+  "lab_report_analyzer_kb": [
+    {
+      "test_id": "haemoglobin_male",
+      "display_name": "Haemoglobin (Male)",
+      "units": "g/dL",
+      "global_reference_range": {"min": 14.0, "max": 17.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 12.3, "max": 16.6},
+        "infant": {"min": 11.0, "max": 17.3},
+        "elderly": {"min": 12.4, "max": 14.9}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 7.0, "high": 20.0},
+      "clinical_significance": "Essential for oxygen transport. Low values indicate anaemia; high values (polycythemia) risk hyperviscosity syndrome .",
+      "source_citation": "Aug 2024 Pakistani RI [1, 9]"
+    },
+    {
+      "test_id": "haemoglobin_female",
+      "display_name": "Haemoglobin (Female)",
+      "units": "g/dL",
+      "global_reference_range": {"min": 12.0, "max": 16.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 11.0, "max": 14.5},
+        "pregnancy_t1": {"min": 11.3, "max": 14.3},
+        "pregnancy_t2": {"min": 10.1, "max": 13.3},
+        "pregnancy_t3": {"min": 10.1, "max": 14.1}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 7.0, "high": 19.0},
+      "clinical_significance": "Pregnancy induces hemodilution. Deficiency causes subacute combined degeneration if linked to B12 loss .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "rbc_count_male",
+      "display_name": "RBC Count (Male)",
+      "units": "x10^12/L",
+      "global_reference_range": {"min": 4.5, "max": 5.9},
+      "pakistan_reference_range": {
+        "adult": {"min": 4.25, "max": 6.02},
+        "infant": {"min": 3.12, "max": 7.3}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 7.0},
+      "clinical_significance": "Total red cell mass. Pakistani males show higher counts than global mean due to regional environmental factors.[9]",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "rbc_count_female",
+      "display_name": "RBC Count (Female)",
+      "units": "x10^12/L",
+      "global_reference_range": {"min": 4.0, "max": 5.2},
+      "pakistan_reference_range": {
+        "adult": {"min": 3.61, "max": 5.2},
+        "pregnancy_t1": {"min": 4.1, "max": 5.1},
+        "pregnancy_t3": {"min": 3.2, "max": 4.4}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 6.5},
+      "clinical_significance": "Red cell volume declines in late pregnancy. High levels suggest erythrocytosis .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "hematocrit_male",
+      "display_name": "Hematocrit (Male)",
+      "units": "%",
+      "global_reference_range": {"min": 41.0, "max": 51.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 38.4, "max": 50.7}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 20.0, "high": 60.0},
+      "clinical_significance": "Ratio of RBCs to plasma. Pakistani Male RI is slightly lower than Caucasian standards.[9]",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "hematocrit_female",
+      "display_name": "Hematocrit (Female)",
+      "units": "%",
+      "global_reference_range": {"min": 36.0, "max": 47.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 34.5, "max": 45.4},
+        "pregnancy_t1": {"min": 36.0, "max": 46.0},
+        "pregnancy_t3": {"min": 30.0, "max": 40.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 20.0, "high": 60.0},
+      "clinical_significance": "Physiological drop in pregnancy. Below 30% indicates anemia .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "mcv",
+      "display_name": "Mean Corpuscular Volume (MCV)",
+      "units": "fL",
+      "global_reference_range": {"min": 80.0, "max": 100.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 78.7, "max": 96.3},
+        "infant": {"min": 90.4, "max": 128.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 50.0, "high": 120.0},
+      "clinical_significance": "Classifies anemia as microcytic (common in iron deficiency) or macrocytic (B12 deficiency) .",
+      "source_citation": "Aug 2024 Pakistani RI [9, 10]"
+    },
+    {
+      "test_id": "mch",
+      "display_name": "Mean Corpuscular Haemoglobin (MCH)",
+      "units": "pg",
+      "global_reference_range": {"min": 27.0, "max": 32.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 25.1, "max": 31.6},
+        "infant": {"min": 26.0, "max": 41.1}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Average hemoglobin content per RBC. Lower limits found in healthy Pakistani adults .",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "mchc",
+      "display_name": "Mean Corpuscular Hgb Conc (MCHC)",
+      "units": "g/dL",
+      "global_reference_range": {"min": 32.0, "max": 36.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 30.0, "max": 35.5},
+        "infant": {"min": 25.8, "max": 33.6}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Concentration of Hgb in a given volume of RBCs .",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "rdw",
+      "display_name": "Red Cell Distribution Width (RDW)",
+      "units": "%",
+      "global_reference_range": {"min": 11.5, "max": 14.5},
+      "pakistan_reference_range": {
+        "adult": {"min": 12.0, "max": 16.0},
+        "infant": {"min": 11.4, "max": 21.5}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 25.0},
+      "clinical_significance": "Indicates anisocytosis. High RDW is a marker for iron deficiency early onset.[9, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "wbc_count",
+      "display_name": "White Blood Cell Count",
+      "units": "x10^9/L",
+      "global_reference_range": {"min": 4.5, "max": 11.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 4.6, "max": 11.38},
+        "infant": {"min": 3.1, "max": 21.6},
+        "pregnancy_t3": {"min": 6.0, "max": 16.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 1.5, "high": 38.0},
+      "clinical_significance": "High levels (leukocytosis) indicate infection. MedMCQA mentions leukemoid reactions >50,000 .",
+      "source_citation": "Aug 2024 Pakistani RI [9, 10]"
+    },
+    {
+      "test_id": "platelet_count",
+      "display_name": "Platelet Count",
+      "units": "x10^9/L",
+      "global_reference_range": {"min": 150.0, "max": 450.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 154.0, "max": 433.0},
+        "infant": {"min": 152.0, "max": 472.0},
+        "pregnancy_t3": {"min": 130.0, "max": 400.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 35.0, "high": 1000.0},
+      "clinical_significance": "Essential for clotting. Low platelets (thrombocytopenia) risk spontaneous bleeding.[9, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "neutrophils_abs",
+      "display_name": "Absolute Neutrophil Count",
+      "units": "x10^9/L",
+      "global_reference_range": {"min": 1.5, "max": 7.5},
+      "pakistan_reference_range": {
+        "adult": {"min": 1.81, "max": 7.59}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 0.5, "high": null},
+      "clinical_significance": "Primary defense against bacteria. Neutropenia (<0.5) poses severe infection risk.[9]",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "lymphocytes_abs",
+      "display_name": "Absolute Lymphocyte Count",
+      "units": "x10^9/L",
+      "global_reference_range": {"min": 0.8, "max": 3.5},
+      "pakistan_reference_range": {
+        "adult": {"min": 1.1, "max": 4.75}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 0.5, "high": null},
+      "clinical_significance": "Elevated in viral infections. Pakistani adults show higher upper limits .",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "monocytes_abs",
+      "display_name": "Absolute Monocyte Count",
+      "units": "x10^9/L",
+      "global_reference_range": {"min": 0.1, "max": 1.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.2, "max": 1.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Marker for chronic inflammation. Higher baseline in Pakistani cohort.[9]",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "eosinophils_abs",
+      "display_name": "Absolute Eosinophil Count",
+      "units": "x10^9/L",
+      "global_reference_range": {"min": 0.0, "max": 0.5},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.02, "max": 0.6}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Raised in allergies and parasitic infections .",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "basophils_abs",
+      "display_name": "Absolute Basophil Count",
+      "units": "x10^9/L",
+      "global_reference_range": {"min": 0.0, "max": 0.1},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.01, "max": 0.09}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Rarest leukocyte. High in myeloproliferative disorders.[9]",
+      "source_citation": "Aug 2024 Pakistani RI [9]"
+    },
+    {
+      "test_id": "alt_sgpt",
+      "display_name": "ALT (SGPT)",
+      "units": "U/L",
+      "global_reference_range": {"min": 0.0, "max": 35.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 45.0},
+        "pregnancy_t1": {"min": 3.0, "max": 35.0},
+        "pregnancy_t2": {"min": 1.0, "max": 33.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 1000.0},
+      "clinical_significance": "Liver damage marker. Local Pakistani labs use higher upper limits .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "ast_sgot",
+      "display_name": "AST (SGOT)",
+      "units": "U/L",
+      "global_reference_range": {"min": 0.0, "max": 35.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 40.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 1000.0},
+      "clinical_significance": "High in liver or muscle injury. AST:ALT ratio >2 suggests alcoholic liver disease.[12, 13]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 13]"
+    },
+    {
+      "test_id": "alkaline_phosphatase",
+      "display_name": "Alkaline Phosphatase (ALP)",
+      "units": "U/L",
+      "global_reference_range": {"min": 44.0, "max": 147.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 35.0, "max": 104.0},
+        "child_1_17yr": {"min": 121.0, "max": 300.0},
+        "pregnancy_t1": {"min": 122.0, "max": 224.0},
+        "pregnancy_t2": {"min": 131.0, "max": 300.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 1000.0},
+      "clinical_significance": "Increased in bone growth (children) and biliary obstruction .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "total_bilirubin",
+      "display_name": "Total Bilirubin",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 0.3, "max": 1.2},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.2, "max": 1.3},
+        "newborn_24h": {"min": 0.0, "max": 8.0},
+        "newborn_48h": {"min": 0.0, "max": 13.2}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 16.0},
+      "clinical_significance": "Marker for jaundice. Neonatal thresholds are much higher.[1, 14]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 14]"
+    },
+    {
+      "test_id": "bilirubin_direct",
+      "display_name": "Direct Bilirubin",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 0.0, "max": 0.3},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.1, "max": 0.3}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Conjugated bilirubin. Raised in biliary obstruction .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "bilirubin_indirect",
+      "display_name": "Indirect Bilirubin",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 0.2, "max": 0.8},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.2, "max": 0.8}
+      },
+      "is_localized": true,
+      "clinical_significance": "Unconjugated. Raised in hemolytic states .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "serum_albumin",
+      "display_name": "Albumin",
+      "units": "g/L",
+      "global_reference_range": {"min": 34.0, "max": 50.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 35.0, "max": 52.0},
+        "pregnancy_t1": {"min": 31.5, "max": 45.0},
+        "pregnancy_t2": {"min": 27.8, "max": 44.7}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 20.0, "high": null},
+      "clinical_significance": "Synthesized by liver. Drops in pregnancy due to hemodilution .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "total_protein",
+      "display_name": "Total Protein",
+      "units": "g/dL",
+      "global_reference_range": {"min": 6.0, "max": 8.3},
+      "pakistan_reference_range": {
+        "adult": {"min": 6.4, "max": 8.3},
+        "elderly": {"min": 6.5, "max": 7.8}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 3.0, "high": 10.0},
+      "clinical_significance": "Sum of albumin and globulin. Low levels point to malnutrition.[1, 13]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 13]"
+    },
+    {
+      "test_id": "ggt",
+      "display_name": "Gamma GT",
+      "units": "U/L",
+      "global_reference_range": {"min": 5.0, "max": 55.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 5.0, "max": 36.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 500.0},
+      "clinical_significance": "Sensitive marker for alcohol use and biliary health .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "ldh",
+      "display_name": "Lactate Dehydrogenase (LDH)",
+      "units": "U/L",
+      "global_reference_range": {"min": 140.0, "max": 280.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 135.0, "max": 214.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 1000.0},
+      "clinical_significance": "Marker of tissue damage or hemolysis .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "serum_creatinine",
+      "display_name": "Serum Creatinine",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 0.7, "max": 1.3},
+      "pakistan_reference_range": {
+        "adult_male": {"min": 0.64, "max": 1.2},
+        "adult_female": {"min": 0.42, "max": 1.1},
+        "infant_lt_2yr": {"min": 0.15, "max": 0.39},
+        "elderly": {"min": 0.6, "max": 1.2}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 6.0},
+      "clinical_significance": "GFR marker. Elevated in renal failure. BPH can cause hydronephrosis raising Cr .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "serum_urea",
+      "display_name": "Serum Urea",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 10.0, "max": 40.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 10.0, "max": 50.0},
+        "elderly": {"min": 17.0, "max": 49.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 100.0},
+      "clinical_significance": "Renal waste product. Higher upper limits used in many Pakistani labs.[1, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 11]"
+    },
+    {
+      "test_id": "serum_sodium",
+      "display_name": "Sodium (Na+)",
+      "units": "mEq/L",
+      "global_reference_range": {"min": 136.0, "max": 145.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 135.0, "max": 145.0},
+        "infant": {"min": 134.0, "max": 144.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 120.0, "high": 160.0},
+      "clinical_significance": "Main electrolyte for osmolality. Hyponatremia risks cerebral edema.[1, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 11]"
+    },
+    {
+      "test_id": "serum_potassium",
+      "display_name": "Potassium (K+)",
+      "units": "mEq/L",
+      "global_reference_range": {"min": 3.5, "max": 5.1},
+      "pakistan_reference_range": {
+        "adult": {"min": 3.5, "max": 5.0},
+        "infant_lt_1wk": {"min": 2.5, "max": 6.5}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 2.5, "high": 6.5},
+      "clinical_significance": "Crucial for heart rhythm. Hyperkalemia can be fatal.[1, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 11]"
+    },
+    {
+      "test_id": "serum_chloride",
+      "display_name": "Chloride (Cl-)",
+      "units": "mEq/L",
+      "global_reference_range": {"min": 98.0, "max": 107.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 95.0, "max": 105.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 75.0, "high": 125.0},
+      "clinical_significance": "Acid-base indicator. Low in prolonged vomiting.[1, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 11]"
+    },
+    {
+      "test_id": "serum_bicarbonate",
+      "display_name": "Bicarbonate (HCO3-)",
+      "units": "mEq/L",
+      "global_reference_range": {"min": 23.0, "max": 28.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 22.0, "max": 29.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 10.0, "high": 40.0},
+      "clinical_significance": "Marker for metabolic acidosis/alkalosis .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "uric_acid",
+      "display_name": "Uric Acid",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 2.4, "max": 7.0},
+      "pakistan_reference_range": {
+        "adult_male": {"min": 3.4, "max": 7.5},
+        "adult_female": {"min": 2.4, "max": 6.5},
+        "pregnancy_t1": {"min": 1.6, "max": 4.4},
+        "pregnancy_t2": {"min": 1.6, "max": 4.5}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 13.0},
+      "clinical_significance": "High levels diagnostic for gout. Pakistani adults show slightly higher peaks.[1, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 11]"
+    },
+    {
+      "test_id": "serum_calcium_total",
+      "display_name": "Total Calcium",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 8.8, "max": 10.2},
+      "pakistan_reference_range": {
+        "adult": {"min": 8.5, "max": 11.2},
+        "child_5_18y": {"min": 8.5, "max": 10.5}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 6.0, "high": 13.0},
+      "clinical_significance": "Bone/nerve function. Low calcium (tetany) vs high (hyperparathyroidism).[1, 14]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 14]"
+    },
+    {
+      "test_id": "serum_calcium_ionized",
+      "display_name": "Ionized Calcium",
+      "units": "mmol/L",
+      "global_reference_range": {"min": 1.14, "max": 1.28},
+      "pakistan_reference_range": {
+        "adult": {"min": 1.12, "max": 1.12}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 0.8, "high": 1.6},
+      "clinical_significance": "Physiologically active calcium fraction .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "serum_magnesium",
+      "display_name": "Magnesium",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 1.7, "max": 2.2},
+      "pakistan_reference_range": {
+        "adult": {"min": 1.5, "max": 2.4}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 1.0, "high": 4.9},
+      "clinical_significance": "Muscle stabilizer. Low levels cause irritability/tetany .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "serum_phosphorus",
+      "display_name": "Phosphorus",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 2.5, "max": 4.5},
+      "pakistan_reference_range": {
+        "adult": {"min": 3.0, "max": 4.5},
+        "infant_lt_3y": {"min": 4.5, "max": 6.7}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 1.0, "high": 9.0},
+      "clinical_significance": "High in renal failure and tumor lysis syndrome.[1, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 11]"
+    },
+    {
+      "test_id": "tsh",
+      "display_name": "Thyroid Stimulating Hormone (TSH)",
+      "units": "µIU/mL",
+      "global_reference_range": {"min": 0.4, "max": 4.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.73, "max": 4.94},
+        "infant": {"min": 0.15, "max": 6.32},
+        "pregnancy_t1": {"min": 0.05, "max": 2.8},
+        "pregnancy_t2": {"min": 0.16, "max": 3.3},
+        "pregnancy_t3": {"min": 0.34, "max": 4.6}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 0.01, "high": 50.0},
+      "clinical_significance": "Pregnancy-specific RIs prevent subclinical overdiagnosis .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "free_t4",
+      "display_name": "Free T4",
+      "units": "ng/dL",
+      "global_reference_range": {"min": 0.8, "max": 1.8},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.81, "max": 1.51},
+        "pregnancy_t1": {"min": 0.89, "max": 1.76},
+        "pregnancy_t3": {"min": 0.78, "max": 5.2}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 0.4, "high": 5.0},
+      "clinical_significance": "Active thyroid hormone. Progressive decline in pregnancy trimesters .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "free_t3",
+      "display_name": "Free T3",
+      "units": "pmol/L",
+      "global_reference_range": {"min": 3.1, "max": 6.8},
+      "pakistan_reference_range": {
+        "adult": {"min": 2.8, "max": 5.4},
+        "pregnancy_t1": {"min": 1.8, "max": 4.4},
+        "pregnancy_t3": {"min": 2.0, "max": 4.8}
+      },
+      "is_localized": true,
+      "clinical_significance": "Decreases as pregnancy progresses .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "tpo_antibodies",
+      "display_name": "Anti-TPO Antibodies",
+      "units": "IU/mL",
+      "global_reference_range": {"min": 0.0, "max": 34.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 2.4, "max": 23.1}
+      },
+      "is_localized": true,
+      "clinical_significance": "Positive (>35) indicates Hashimoto's risk in pregnancy .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "total_cholesterol",
+      "display_name": "Total Cholesterol",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 150.0, "max": 200.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 140.0, "max": 200.0},
+        "elderly": {"min": 150.0, "max": 220.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 300.0},
+      "clinical_significance": "Sum of lipids. Higher limits in elderly due to age dynamics.[1, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 11]"
+    },
+    {
+      "test_id": "hdl_cholesterol",
+      "display_name": "HDL (Good) Cholesterol",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 40.0, "max": 60.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 35.0, "max": 55.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 20.0, "high": null},
+      "clinical_significance": "Protective cholesterol. Low HDL is major CVD risk in Pakistan.[1, 9]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 9]"
+    },
+    {
+      "test_id": "ldl_cholesterol",
+      "display_name": "LDL (Bad) Cholesterol",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 0.0, "max": 100.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 130.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 190.0},
+      "clinical_significance": "Primary atherogenic driver. Deposits plaques in arterial walls.[1, 9]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 9]"
+    },
+    {
+      "test_id": "triglycerides",
+      "display_name": "Triglycerides",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 0.0, "max": 150.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 160.0},
+        "elderly": {"min": 0.0, "max": 180.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 500.0},
+      "clinical_significance": "Dietary fat indicator. >500 risks pancreatitis.[1, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 11]"
+    },
+    {
+      "test_id": "vldl_cholesterol",
+      "display_name": "VLDL Cholesterol",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 2.0, "max": 30.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 30.0}
+      },
+      "is_localized": true,
+      "clinical_significance": "Carrier of triglycerides in the blood .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "fasting_glucose",
+      "display_name": "Fasting Plasma Glucose",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 70.0, "max": 100.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 65.0, "max": 100.0},
+        "infant": {"min": 40.0, "max": 90.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 40.0, "high": 450.0},
+      "clinical_significance": "Newborn glucose is lower. DM diagnosed if >126 mg/dL.[15, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [15, 11]"
+    },
+    {
+      "test_id": "hba1c",
+      "display_name": "HbA1c",
+      "units": "%",
+      "global_reference_range": {"min": 4.0, "max": 5.6},
+      "pakistan_reference_range": {
+        "adult": {"min": 4.6, "max": 6.56},
+        "pregnancy_t1": {"min": 3.8, "max": 5.2},
+        "pregnancy_t3": {"min": 4.2, "max": 5.7}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 10.0},
+      "clinical_significance": "Reflects 3-month control. Ethnicity-related glycation differences in Pakistan .",
+      "source_citation": "Aug 2024 Pakistani RI [1]"
+    },
+    {
+      "test_id": "prothrombin_time",
+      "display_name": "Prothrombin Time (PT)",
+      "units": "seconds",
+      "global_reference_range": {"min": 11.0, "max": 14.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 11.8, "max": 14.0},
+        "child": {"min": 12.0, "max": 15.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 40.0},
+      "clinical_significance": "Extrinsic pathway. Prolonged in liver damage.[1, 9]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 9]"
+    },
+    {
+      "test_id": "inr",
+      "display_name": "INR",
+      "units": "ratio",
+      "global_reference_range": {"min": 0.9, "max": 1.2},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.9, "max": 1.1}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 5.0},
+      "clinical_significance": "Standardized clotting. >5 risks hemorrhage.[1, 15]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 15]"
+    },
+    {
+      "test_id": "aptt",
+      "display_name": "APTT",
+      "units": "seconds",
+      "global_reference_range": {"min": 25.0, "max": 35.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 25.0, "max": 38.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 90.0},
+      "clinical_significance": "Monitoring heparin therapy. Pakistani upper limits slightly higher.[10, 14]",
+      "source_citation": "MedMCQA & LabQAR [10, 14]"
+    },
+    {
+      "test_id": "fibrinogen",
+      "display_name": "Fibrinogen",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 200.0, "max": 400.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 150.0, "max": 350.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 100.0, "high": 700.0},
+      "clinical_significance": "Acute phase reactant. Depleted in DIC.[1, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "d_dimer",
+      "display_name": "D-Dimer",
+      "units": "µg/mL",
+      "global_reference_range": {"min": 0.0, "max": 0.5},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 0.5}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 0.5},
+      "clinical_significance": "Negative predictive value for thromboembolism .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "serum_iron",
+      "display_name": "Serum Iron",
+      "units": "µg/dL",
+      "global_reference_range": {"min": 60.0, "max": 170.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 60.0, "max": 160.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 350.0},
+      "clinical_significance": "Low iron leads to microcytic anemia.[1, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "ferritin_male",
+      "display_name": "Ferritin (Male)",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 20.0, "max": 250.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 15.0, "max": 200.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 10.0, "high": null},
+      "clinical_significance": "Iron stores. Low in early anemia .",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "ferritin_female",
+      "display_name": "Ferritin (Female)",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 10.0, "max": 150.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 15.0, "max": 200.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 10.0, "high": null},
+      "clinical_significance": "Higher baseline found in Pakistani healthy female study.[1, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "tibc",
+      "display_name": "Total Iron Binding Capacity",
+      "units": "µg/dL",
+      "global_reference_range": {"min": 250.0, "max": 450.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 250.0, "max": 460.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Increased in iron deficiency .",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "vitamin_b12",
+      "display_name": "Vitamin B12",
+      "units": "pg/mL",
+      "global_reference_range": {"min": 200.0, "max": 800.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 200.0, "max": 800.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": 150.0, "high": null},
+      "clinical_significance": "Deficiency causes demyelination and megaloblastic changes.[7, 10]",
+      "source_citation": "MedMCQA & LabQAR [7, 10]"
+    },
+    {
+      "test_id": "serum_folate",
+      "display_name": "Serum Folate",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 5.0, "max": 20.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 2.5, "max": 20.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 2.0, "high": null},
+      "clinical_significance": "Low levels common in sub-optimally nourished cohorts.[1, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "vitamin_d_25oh",
+      "display_name": "Vitamin D (25-OH)",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 30.0, "max": 100.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 30.0, "max": 100.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": 10.0, "high": 150.0},
+      "clinical_significance": "Endemic deficiency in Pakistan. Regulatory hormone for calcium balance .",
+      "source_citation": "MedMCQA & LabQAR [16]"
+    },
+    {
+      "test_id": "serum_zinc",
+      "display_name": "Serum Zinc",
+      "units": "µmol/L",
+      "global_reference_range": {"min": 10.7, "max": 22.9},
+      "pakistan_reference_range": {
+        "adult": {"min": 11.47, "max": 36.72},
+        "infant": {"min": 9.5, "max": 25.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 5.0, "high": 50.0},
+      "clinical_significance": "Trace element. Wider Pakistani RI due to dietary intake.",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "serum_copper",
+      "display_name": "Serum Copper",
+      "units": "µg/dL",
+      "global_reference_range": {"min": 70.0, "max": 140.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 70.0, "max": 140.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Wilson's disease marker.",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "troponin_i",
+      "display_name": "Troponin I",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 0.0, "max": 0.04},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 0.04}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 0.3},
+      "clinical_significance": "Gold standard for MI diagnosis .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "nt_probnp",
+      "display_name": "NT-proBNP",
+      "units": "pg/mL",
+      "global_reference_range": {"min": 0.0, "max": 125.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 125.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 450.0},
+      "clinical_significance": "Reflects ventricular wall stress in heart failure .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "crp",
+      "display_name": "C-Reactive Protein (CRP)",
+      "units": "mg/L",
+      "global_reference_range": {"min": 0.0, "max": 8.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 8.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 100.0},
+      "clinical_significance": "Acute phase reactant for inflammation.[1, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "serum_ammonia",
+      "display_name": "Serum Ammonia",
+      "units": "µmol/L",
+      "global_reference_range": {"min": 10.0, "max": 35.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 16.0, "max": 60.0},
+        "infant": {"min": 10.0, "max": 120.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 150.0},
+      "clinical_significance": "Elevated in liver damage causing encephalopathy.[1, 11]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 11]"
+    },
+    {
+      "test_id": "ck_total",
+      "display_name": "Creatine Kinase (Total)",
+      "units": "U/L",
+      "global_reference_range": {"min": 30.0, "max": 200.0},
+      "pakistan_reference_range": {
+        "adult_male": {"min": 49.0, "max": 439.0},
+        "adult_female": {"min": 32.0, "max": 182.0},
+        "elderly": {"min": 30.0, "max": 208.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 10000.0},
+      "clinical_significance": "Muscle breakdown enzyme. Pakistani males show higher normal range.[1, 14]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 14]"
+    },
+    {
+      "test_id": "ck_mb",
+      "display_name": "CK-MB",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 0.0, "max": 5.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 10.4}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 25.0},
+      "clinical_significance": "Heart-specific muscle enzyme.[1, 14]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 14]"
+    },
+    {
+      "test_id": "homocysteine",
+      "display_name": "Homocysteine",
+      "units": "µmol/L",
+      "global_reference_range": {"min": 5.0, "max": 15.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 4.0, "max": 16.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "CV risk marker. High in B12 deficiency.[1, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "procalcitonin",
+      "display_name": "Procalcitonin",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 0.0, "max": 0.1},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 0.1}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 2.0},
+      "clinical_significance": "Sepsis marker .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "reticulocyte_count",
+      "display_name": "Reticulocyte Count",
+      "units": "%",
+      "global_reference_range": {"min": 0.5, "max": 1.5},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.5, "max": 1.5}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Reflects bone marrow response .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "g6pd_activity",
+      "display_name": "G6PD Activity",
+      "units": "U/g Hb",
+      "global_reference_range": {"min": 8.0, "max": 12.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 6.0, "max": 12.4}
+      },
+      "is_localized": true,
+      "clinical_significance": "Crucial for preventing RBC oxidation. Deficient in some Pakistani ethnic groups.",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "hba2",
+      "display_name": "HbA2",
+      "units": "%",
+      "global_reference_range": {"min": 2.0, "max": 3.3},
+      "pakistan_reference_range": {
+        "adult": {"min": 2.0, "max": 3.3}
+      },
+      "is_localized": true,
+      "clinical_significance": "Beta-thalassemia trait screening .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "psa_total",
+      "display_name": "Total PSA",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 0.0, "max": 4.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 4.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 10.0},
+      "clinical_significance": "Prostate health. High in cancer/BPH .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "afp",
+      "display_name": "AFP",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 0.0, "max": 10.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 20.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": null},
+      "clinical_significance": "Tumor marker for liver/germ cells.[1, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "ca_125",
+      "display_name": "CA-125",
+      "units": "U/mL",
+      "global_reference_range": {"min": 0.0, "max": 35.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 35.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Ovarian cancer marker .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "ca_19_9",
+      "display_name": "CA 19-9",
+      "units": "U/mL",
+      "global_reference_range": {"min": 0.0, "max": 35.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 35.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Pancreatic/biliary marker .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "cea",
+      "display_name": "CEA",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 0.0, "max": 3.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 3.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Colorectal marker .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "acth",
+      "display_name": "ACTH",
+      "units": "pmol/L",
+      "global_reference_range": {"min": 2.2, "max": 13.3},
+      "pakistan_reference_range": {
+        "adult": {"min": 2.2, "max": 13.3}
+      },
+      "is_localized": false,
+      "clinical_significance": "Pituitary stress stimulant .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "cortisol_am",
+      "display_name": "Cortisol (8 AM)",
+      "units": "µg/dL",
+      "global_reference_range": {"min": 5.0, "max": 23.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 6.7, "max": 22.6}
+      },
+      "is_localized": true,
+      "clinical_significance": "Diurnal stress hormone. Localized RI in 2024 review.[1, 16]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 16]"
+    },
+    {
+      "test_id": "serum_lithium",
+      "display_name": "Serum Lithium",
+      "units": "mmol/L",
+      "global_reference_range": {"min": 0.6, "max": 1.2},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.6, "max": 1.2},
+        "elderly": {"min": 0.4, "max": 0.8}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 2.0},
+      "clinical_significance": "Therapeutic monitoring. Lower range for elderly .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "sflt_1",
+      "display_name": "sFlt-1",
+      "units": "pg/mL",
+      "global_reference_range": {"min": 50.0, "max": 120.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 57.7, "max": 118.5},
+        "pregnancy_15_28w": {"min": 563.5, "max": 3288.0}
+      },
+      "is_localized": true,
+      "clinical_significance": "Novel pre-eclampsia marker. Massively raised in high-risk pregnancy .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "chi3l1",
+      "display_name": "CHI3L1",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 10.0, "max": 190.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 12.8, "max": 81.8}
+      },
+      "is_localized": true,
+      "clinical_significance": "Novel biomarker for hepatic fibrosis screening .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "pivka_ii",
+      "display_name": "PIVKA-II",
+      "units": "mAU/ml",
+      "global_reference_range": {"min": 15.0, "max": 50.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 15.5, "max": 43.0}
+      },
+      "is_localized": true,
+      "clinical_significance": "Novel biomarker for hepatocellular carcinoma early detection .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "pgf",
+      "display_name": "Placental Growth Factor (PGF)",
+      "units": "pg/mL",
+      "global_reference_range": {"min": 40.0, "max": 40.0},
+      "pakistan_reference_range": {
+        "pregnancy_15_28w": {"min": 41.0, "max": 41.0}
+      },
+      "is_localized": true,
+      "clinical_significance": "PGF rises in early trimesters; low PGF suggests pre-eclampsia risk .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "amylase",
+      "display_name": "Amylase",
+      "units": "U/L",
+      "global_reference_range": {"min": 25.0, "max": 125.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 130.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 350.0},
+      "clinical_significance": "Pancreatic enzyme. Rapid rise in acute pancreatitis.[1, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "lipase",
+      "display_name": "Lipase",
+      "units": "U/L",
+      "global_reference_range": {"min": 10.0, "max": 140.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 95.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": null, "high": 700.0},
+      "clinical_significance": "Highly specific for pancreatitis.[1, 10]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 10]"
+    },
+    {
+      "test_id": "valproic_acid",
+      "display_name": "Valproic Acid",
+      "units": "µmol/L",
+      "global_reference_range": {"min": 350.0, "max": 700.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 350.0, "max": 700.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 150.0},
+      "clinical_significance": "Therapeutic drug. Toxicity risk above 150 µg/mL.[10, 13]",
+      "source_citation": "MedMCQA & LabQAR [10, 13]"
+    },
+    {
+      "test_id": "insulin_fasting",
+      "display_name": "Fasting Insulin",
+      "units": "µIU/mL",
+      "global_reference_range": {"min": 2.0, "max": 20.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 2.0, "max": 20.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Used in HOMA-IR calculation for metabolic risk .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "c_peptide",
+      "display_name": "C-Peptide",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 1.1, "max": 4.4},
+      "pakistan_reference_range": {
+        "adult": {"min": 1.1, "max": 4.4}
+      },
+      "is_localized": false,
+      "clinical_significance": "Measures endogenous insulin production .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "prolactin_male",
+      "display_name": "Prolactin (Male)",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 2.0, "max": 18.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 2.0, "max": 18.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "High levels (prolactinoma) cause hypogonadism .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "prolactin_female",
+      "display_name": "Prolactin (Female)",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 4.0, "max": 25.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 4.0, "max": 25.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Increases in pregnancy. Pathology causes amenorrhea .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "fsh_male",
+      "display_name": "FSH (Male)",
+      "units": "mIU/mL",
+      "global_reference_range": {"min": 1.5, "max": 12.4},
+      "pakistan_reference_range": {
+        "adult": {"min": 1.5, "max": 12.4}
+      },
+      "is_localized": false,
+      "clinical_significance": "Marker for spermatogenesis .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "lh_male",
+      "display_name": "LH (Male)",
+      "units": "mIU/mL",
+      "global_reference_range": {"min": 1.7, "max": 8.6},
+      "pakistan_reference_range": {
+        "adult": {"min": 1.7, "max": 8.6}
+      },
+      "is_localized": false,
+      "clinical_significance": "Testosterone stimulation marker .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "estradiol",
+      "display_name": "Estradiol",
+      "units": "pg/mL",
+      "global_reference_range": {"min": 20.0, "max": 350.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 20.0, "max": 350.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Primary estrogen. Cycle-dependent .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "progesterone",
+      "display_name": "Progesterone",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 0.5, "max": 25.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.5, "max": 25.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Ovulation marker .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "testosterone_male",
+      "display_name": "Total Testosterone",
+      "units": "ng/dL",
+      "global_reference_range": {"min": 300.0, "max": 1000.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 300.0, "max": 1000.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Primary male androgen .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "esr_male",
+      "display_name": "ESR (Male)",
+      "units": "mm/hr",
+      "global_reference_range": {"min": 0.0, "max": 15.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 2.0, "max": 15.0}
+      },
+      "is_localized": true,
+      "clinical_significance": "Inflammatory marker. Pakistani males show slightly narrower base.[1, 9]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 9]"
+    },
+    {
+      "test_id": "esr_female",
+      "display_name": "ESR (Female)",
+      "units": "mm/hr",
+      "global_reference_range": {"min": 0.0, "max": 20.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 2.0, "max": 15.0}
+      },
+      "is_localized": true,
+      "clinical_significance": "Similar healthy adult baseline observed across genders in local study.[1, 9]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 9]"
+    },
+    {
+      "test_id": "carbamazepine",
+      "display_name": "Carbamazepine",
+      "units": "µg/mL",
+      "global_reference_range": {"min": 4.0, "max": 12.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 4.0, "max": 12.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 20.0},
+      "clinical_significance": "Anticonvulsant. Alert threshold >15-20 .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "digoxin",
+      "display_name": "Digoxin",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 0.5, "max": 2.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.5, "max": 2.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 2.5},
+      "clinical_significance": "Toxicity causes arrhythmias and muscle weakness .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "serum_lead",
+      "display_name": "Serum Lead",
+      "units": "µg/dL",
+      "global_reference_range": {"min": 0.0, "max": 5.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 5.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 5.0},
+      "clinical_significance": "Toxic heavy metal. Thresholds lowered in recent guidelines .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "oxalate_creatinine_ratio",
+      "display_name": "Spot Ox:Cr Ratio",
+      "units": "index",
+      "global_reference_range": {"min": 0.05, "max": 0.34},
+      "pakistan_reference_range": {
+        "infant_lt_6m": {"min": 0.175, "max": 0.25},
+        "child_4_6y": {"min": 0.05, "max": 0.08}
+      },
+      "is_localized": true,
+      "clinical_significance": "Screens for hyperoxaluria in pediatric stone formers .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "serum_biotinidase",
+      "display_name": "Serum Biotinidase",
+      "units": "nmol/ml/min",
+      "global_reference_range": {"min": 3.0, "max": 11.0},
+      "pakistan_reference_range": {
+        "infant": {"min": 3.0, "max": 11.0}
+      },
+      "is_localized": true,
+      "clinical_significance": "Metabolic screening for infants .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "ca_15_3",
+      "display_name": "CA 15-3",
+      "units": "U/mL",
+      "global_reference_range": {"min": 0.0, "max": 30.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 30.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Breast cancer tumor marker .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "serum_osmolality",
+      "display_name": "Serum Osmolality",
+      "units": "mmol/kg",
+      "global_reference_range": {"min": 275.0, "max": 295.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 275.0, "max": 295.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": 250.0, "high": 330.0},
+      "clinical_significance": "Indicates hydration status .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "anion_gap",
+      "display_name": "Anion Gap",
+      "units": "mmol/L",
+      "global_reference_range": {"min": 5.0, "max": 12.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 5.0, "max": 12.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 20.0},
+      "clinical_significance": "Indicative of DKA or poisoning .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "serum_lactate",
+      "display_name": "Serum Lactate",
+      "units": "mmol/L",
+      "global_reference_range": {"min": 0.5, "max": 2.5},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.5, "max": 2.5}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 4.0},
+      "clinical_significance": "Indicator of tissue hypoxia .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "bnp",
+      "display_name": "BNP",
+      "units": "pg/mL",
+      "global_reference_range": {"min": 0.0, "max": 100.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 50.0}
+      },
+      "is_localized": true,
+      "clinical_significance": "Diagnostic marker for heart failure .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "c_reactive_protein_hs",
+      "display_name": "hs-CRP",
+      "units": "mg/L",
+      "global_reference_range": {"min": 0.0, "max": 3.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 3.5}
+      },
+      "is_localized": true,
+      "clinical_significance": "High-sensitivity marker for cardiac risk .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "albumin_creatinine_ratio",
+      "display_name": "Albumin/Creatinine Ratio",
+      "units": "mg/g",
+      "global_reference_range": {"min": 0.0, "max": 30.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.0, "max": 30.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Screens for microalbuminuria in diabetes .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "serum_aldosterone",
+      "display_name": "Serum Aldosterone",
+      "units": "pmol/L",
+      "global_reference_range": {"min": 61.0, "max": 978.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 61.0, "max": 978.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Salt-regulating hormone .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "base_excess",
+      "display_name": "Base Excess (Arterial)",
+      "units": "mmol/L",
+      "global_reference_range": {"min": -2.5, "max": 2.5},
+      "pakistan_reference_range": {
+        "adult": {"min": -2.5, "max": 2.5},
+        "infant": {"min": -11.0, "max": null}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": -10.0, "high": 10.0},
+      "clinical_significance": "Metabolic acid-base balance .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "arterial_ph",
+      "display_name": "Arterial pH",
+      "units": "pH units",
+      "global_reference_range": {"min": 7.35, "max": 7.45},
+      "pakistan_reference_range": {
+        "adult": {"min": 7.38, "max": 7.46}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 7.2, "high": 7.6},
+      "clinical_significance": "Narrow range required for cell function. Life-threatening acidemia/alkalemia.[1, 13]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 13]"
+    },
+    {
+      "test_id": "pco2_arterial",
+      "display_name": "PaCO2",
+      "units": "mmHg",
+      "global_reference_range": {"min": 35.0, "max": 45.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 32.0, "max": 45.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 20.0, "high": 70.0},
+      "clinical_significance": "Respiratory CO2 component.[1, 13]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 13]"
+    },
+    {
+      "test_id": "po2_arterial",
+      "display_name": "PaO2",
+      "units": "mmHg",
+      "global_reference_range": {"min": 80.0, "max": 105.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 83.0, "max": 116.0}
+      },
+      "is_localized": true,
+      "critical_thresholds": {"low": 50.0, "high": null},
+      "clinical_significance": "Oxygen saturation component. Low levels signify hypoxia.[1, 13]",
+      "source_citation": "Aug 2024 Pakistani RI [1, 13]"
+    },
+    {
+      "test_id": "total_t3",
+      "display_name": "Total T3",
+      "units": "nmol/L",
+      "global_reference_range": {"min": 1.2, "max": 3.1},
+      "pakistan_reference_range": {
+        "pregnancy_t1": {"min": 1.5, "max": 3.3},
+        "pregnancy_t2": {"min": 1.6, "max": 3.1}
+      },
+      "is_localized": true,
+      "clinical_significance": "Thyroid hormone monitoring .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "total_t4",
+      "display_name": "Total T4",
+      "units": "nmol/L",
+      "global_reference_range": {"min": 60.0, "max": 160.0},
+      "pakistan_reference_range": {
+        "infant_cord_blood": {"min": 49.0, "max": 189.0}
+      },
+      "is_localized": true,
+      "clinical_significance": "Cord blood screening for congenital hypothyroidism .",
+      "source_citation": "Aug 2024 Pakistani RI "
+    },
+    {
+      "test_id": "homa_ir",
+      "display_name": "HOMA-IR",
+      "units": "index",
+      "global_reference_range": {"min": 0.5, "max": 2.5},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.5, "max": 2.5}
+      },
+      "is_localized": false,
+      "clinical_significance": "Insulin resistance index .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "folate_red_cell",
+      "display_name": "Folate (Red Cell)",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 160.0, "max": 855.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 160.0, "max": 855.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Intracellular folate status.[10, 13]",
+      "source_citation": "MedMCQA & LabQAR [10, 13]"
+    },
+    {
+      "test_id": "amylase_urine",
+      "display_name": "Amylase (Urine)",
+      "units": "U/L",
+      "global_reference_range": {"min": 1.0, "max": 17.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 1.0, "max": 17.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Urinary excretion of amylase .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "glucose_csf",
+      "display_name": "Glucose (CSF)",
+      "units": "mg/dL",
+      "global_reference_range": {"min": 40.0, "max": 70.0},
+      "pakistan_reference_range": {
+        "adult": {"min": 40.0, "max": 70.0}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": 40.0, "high": 200.0},
+      "clinical_significance": "Low CSF glucose indicates bacterial meningitis .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "protein_csf",
+      "display_name": "Protein (CSF)",
+      "units": "g/L",
+      "global_reference_range": {"min": 0.15, "max": 0.45},
+      "pakistan_reference_range": {
+        "adult": {"min": 0.15, "max": 0.45}
+      },
+      "is_localized": false,
+      "critical_thresholds": {"low": null, "high": 2.5},
+      "clinical_significance": "Raised protein in CNS infection .",
+      "source_citation": "MedMCQA & LabQAR "
+    },
+    {
+      "test_id": "prolactin_elderly",
+      "display_name": "Prolactin (Elderly)",
+      "units": "ng/mL",
+      "global_reference_range": {"min": 2.0, "max": 18.0},
+      "pakistan_reference_range": {
+        "elderly": {"min": 2.0, "max": 18.0}
+      },
+      "is_localized": false,
+      "clinical_significance": "Age partitioned prolactin logic .",
+      "source_citation": "MedMCQA & LabQAR "
+    }
+  ]
+}
