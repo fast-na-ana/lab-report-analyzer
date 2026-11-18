@@ -1,124 +1,91 @@
-# Medical Lab Report Analyzer (RAG-Enabled)
+<div align="center">
 
-An AI-powered medical lab report analyzer that parses medical PDFs, extracts patient profiles, normalizes lab tests against a local JSON knowledge base, and provides clinical significance analysis using Groq.
+# 🩺 Lab Report Analyzer
+
+**Upload a medical lab report PDF and get every result checked against Pakistani reference ranges, explained in English, Urdu or Punjabi, with voice input and read-aloud output.**
+
+![Status](https://img.shields.io/badge/status-working%20prototype-yellowgreen?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-Llama%203.3%2070B-F55036?style=flat-square)
+![RAG](https://img.shields.io/badge/approach-RAG%20over%20local%20KB-6E40C9?style=flat-square)
+
+</div>
+
+---
+
+## Why
+
+Lab reports are full of abbreviations, and their "normal" ranges usually come from Western populations. This tool reads a report, works out who the patient is (age, sex, pregnancy and trimester), and compares each value with the **right** range for that person. Pakistani reference intervals come first, with global ranges as a fallback.
+
+It is deliberately **not a diagnostic tool**. It reports high or low values and what the knowledge base says about them, with citations and a disclaimer.
+
+## How it works
+
+```mermaid
+flowchart LR
+    A[PDF upload] --> B[Parse<br/>PyMuPDF4LLM]
+    B --> C[Profile chunk] --> D[LLM extracts<br/>age · sex · pregnancy]
+    B --> E[Bloodwork chunk] --> F[LLM maps raw names<br/>HGB → haemoglobin_female]
+    D --> G
+    F --> G[Deterministic lookup<br/>in medical_kb.json]
+    G --> H[Clinical significance<br/>+ citations, no diagnosis]
+    H --> I[Streamlit UI<br/>EN · UR · PA + voice]
+```
+
+The LLM is used **only** where language understanding is needed (reading the profile and normalising test names). The reference-range comparison itself is **deterministic Python** against a curated JSON knowledge base, so the numbers can't be hallucinated.
 
 ## Features
-- **Streamlit Web UI**: User-friendly interface for uploading and analyzing lab reports
-- **Multilingual Support**: Full support for English, Urdu (اردو), and Punjabi (پنجابی) languages
-- **Voice Input & Output**: Voice-enabled profile entry and audio report narration
-- **Smart PDF Parsing**: Extracts PDF content and splits into Profile and Bloodwork chunks using pymupdf4llm
-- **AI-Powered Profile Extraction**: Uses Groq (llama-3.3-70b-versatile) to extract patient demographics from reports
-- **Semantic Test Normalization**: Maps raw test names (e.g., "HGB") to KB test_ids using Groq
-- **Pregnancy-Aware Analysis**: Intelligently handles pregnancy-specific reference ranges with intelligent fallback
-- **Gender-Specific Mapping**: Automatically selects appropriate test_ids based on patient gender
-- **Intelligent Lookup**: Checks reference ranges with patient stratification (age, gender, pregnancy status)
-- **Robust File Handling**: Retry logic for medical_kb.json loading with 3 attempts
-- **Clinical Significance Analysis**: Reports abnormal values with clinical context from KB (NO DIAGNOSIS)
-- **Local Reference Integration**: Uses Pakistani RI Study (2024) reference ranges with global fallback
 
-## Architecture
-```
-PDF Upload → Parser (2 chunks) → Profile Extraction (Groq) → Test Normalization (Groq) → Lookup (KB) → Clinical Analysis → Results Display
-```
+- 📄 **Smart PDF parsing:** splits a report into a profile chunk and a bloodwork chunk
+- 🧠 **LLM profile extraction** (Groq, Llama 3.3 70B), with a form for any missing fields
+- 🔤 **Semantic test normalisation:** maps raw names like `HGB` or `Hb` to knowledge-base IDs, picking sex-specific variants
+- 🤰 **Pregnancy-aware ranges:** trimester-specific intervals where they exist, with safe fallbacks
+- 🇵🇰 **Local reference intervals:** 125 tests with Pakistani reference ranges (Pakistan RI study, 2024) plus global fallback
+- 🌐 **Multilingual UI:** English, Urdu (اردو) and Punjabi (پنجابی)
+- 🎙️ **Voice:** speak your profile details (speech-to-text) and listen to the report (gTTS)
 
-## Requirements
-- Python 3.8 or higher
-- Groq API key (free tier available at https://console.groq.com/)
+## Getting started
 
-## Installation
-
-1. Clone or download this project
-2. Navigate to the project directory:
 ```bash
-cd medical-agentic-system
-```
-
-3. Install dependencies:
-```bash
+git clone https://github.com/fast-na-ana/lab-report-analyzer.git
+cd lab-report-analyzer
 pip install -r requirements.txt
-```
-
-4. Set up your Groq API key:
-   - Get your API key from [Groq Console](https://console.groq.com/)
-   - Create a `.env` file in the project root:
-   ```
-   GROQ_API_KEY=your-groq-api-key-here
-   ```
-
-## Usage
-
-1. Run the Streamlit app:
-```bash
+cp .env.example .env        # then paste your Groq API key into .env
 streamlit run main.py
 ```
 
-2. The app will open in your browser. Follow these steps:
-   - **Step 1**: Upload a medical lab report PDF
-   - **Step 2**: Review and complete patient profile (age, gender, pregnancy status)
-   - **Step 3**: Click "Start Analysis" to process lab tests
-   - **Step 4**: View detailed analysis results with reference ranges and clinical significance
+Get a free API key at [console.groq.com](https://console.groq.com/). Voice input needs a working microphone and PyAudio.
 
-3. Click "Analyze Another Report" in the sidebar to reset and analyze a new report.
+### Try it with the sample reports
 
-## Project Structure
+[`samples/`](samples/) has five synthetic lab reports (1 to 11 pages, one with no patient name) for testing. They were generated for this project and contain no real patient data.
+
+## Project structure
 
 ```
-├── main.py              # Streamlit UI orchestrator and state management
-├── parser.py            # PDF extraction and 2-chunk strategy (Profile/Bloodwork)
-├── normalizer.py        # Groq-based semantic mapping with pregnancy logic
-├── lookup.py            # Deterministic retrieval from medical_kb.json
-├── decision.py          # Clinical significance analysis (NO DIAGNOSIS)
-├── medical_kb.json      # Medical knowledge base with Pakistani RI ranges
-├── requirements.txt     # Python dependencies
-├── .env                 # API keys (create this file, gitignored)
-└── README.md           # This file
+main.py           Streamlit UI, language switching, session state
+parser.py         PDF → profile chunk + bloodwork chunk
+normalizer.py     LLM mapping of raw test names → KB test IDs (sex- and pregnancy-aware)
+lookup.py         deterministic reference-range retrieval with stratification
+decision.py       high/low status, clinical significance, disclaimers
+voice_utils.py    speech-to-text and text-to-speech (EN / UR / PA)
+medical_kb.json   curated knowledge base (125 tests)
+samples/          synthetic lab reports for testing
 ```
 
-## Key Features Explained
+## Tech stack
 
-### Profile Extraction
-- Automatically extracts patient name, age, gender, and pregnancy status from PDF
-- If any required field (except name) is missing, displays a form for manual entry
-- Analysis cannot proceed until profile is 100% complete
+Python · Streamlit · Groq API (Llama 3.3 70B) · PyMuPDF4LLM · gTTS · SpeechRecognition · python-dotenv
 
-### Test Normalization
-- Uses Groq to map raw test names to KB test_ids
-- Handles gender-specific variants (e.g., "haemoglobin_male" vs "haemoglobin_female")
-- Pregnancy-aware: Checks if substance is drastically affected by pregnancy
-- Returns errors if pregnancy-specific data is required but unavailable
+## Limitations
 
-### Reference Range Lookup
-- Prioritizes `pakistan_reference_range` over `global_reference_range`
-- Supports age-based stratification (infant, adult, elderly)
-- Supports pregnancy trimester-specific ranges (pregnancy_t1, pregnancy_t2, pregnancy_t3)
-- Falls back gracefully when specific ranges are unavailable
+- Works best on text-based PDFs; scanned images would need OCR first
+- Covers the 125 tests in the knowledge base
+- Not a medical device: results must be reviewed by a qualified clinician
 
-### Clinical Analysis
-- **NO DIAGNOSIS**: Only reports if values are high/low and what KB says
-- Includes clinical significance and source citations from KB
-- Adds required disclaimer for abnormal values
-- Professional formatting with status indicators
+## Team
 
-## Technologies Used
-- **Streamlit**: Web UI framework
-- **Groq API**: llama-3.3-70b-versatile for profile extraction and test normalization
-- **PyMuPDF4LLM**: Advanced PDF text extraction with medical document settings
-- **Python-dotenv**: Secure environment variable management
-- **Pydantic**: Data validation (for future enhancements)
+Built with Hania Zahra. Forked from the original team repository [curlyline-h/lab-report-analyzer](https://github.com/curlyline-h/lab-report-analyzer).
 
-## Safety & Disclaimers
-- **No Medical Diagnosis**: This tool provides automated analysis based on reference ranges and does NOT diagnose
-- **No Treatment Recommendations**: This tool does NOT suggest treatments
-- **Consult Healthcare Providers**: All results should be reviewed by qualified medical professionals
-- Every abnormal value analysis includes a disclaimer
-
-## Configuration Notes
-- Groq API key must be set as `GROQ_API_KEY` environment variable
-- The `medical_kb.json` file contains the complete knowledge base - do not modify unless you understand the structure
-- All API calls use the `llama-3.3-70b-versatile` model for consistency and speed
-
-## Troubleshooting
-- **"GROQ_API_KEY not set"**: Create a `.env` file with your API key
-- **"PDF processing error"**: Ensure the PDF is not corrupted and contains readable text
-- **"No lab results found"**: The PDF might not contain structured lab tables - check the document format
-- **"Test normalization failed"**: The test name might not be recognized - check the KB for available test_ids
+> ⚠️ **Disclaimer:** for educational purposes only. This tool does not provide medical diagnosis or treatment advice.
